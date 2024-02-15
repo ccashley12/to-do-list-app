@@ -1,4 +1,4 @@
-function newItem(){
+function newItem() {
 
 //1. Adding a new item to the list of items: 
     let li = $('<li></li>');
@@ -11,11 +11,7 @@ function newItem(){
         $('#list').append(li);
     }
     
-//2. Crossing out an item from the list of items:
-function crossOut() {
-    li.toggleClass('strike');
-    }
-    
+//2. Crossing out an item from the list of items:    
     li.on('dblclick', function crossOut() {
         li.toggleClass('strike');
     });
